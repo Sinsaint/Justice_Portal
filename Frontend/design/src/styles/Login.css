@@ -1,0 +1,171 @@
+/* Style For SignUp/Login page */
+.Container {
+  height: 100vh;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  border: 1px solid black;
+  width: 50%;
+  /* padding: 30px; */
+  border-radius: 10px;
+}
+
+.Login-email {
+  padding: 8px;
+  margin: 7px 0;
+  width: 92%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+#Login-btn-continue {
+  width: 92%;
+  padding: 8px 0;
+  margin: 12px 0;
+  color: white;
+  background-color: rgb(26, 155, 206);
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.lawimg {
+  width: 42vh;
+  margin-top: 74px;
+}
+
+.login-lawimg {
+  width: 42vh;
+  margin-top: 91px;
+}
+
+.heading-left {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.login-heading-left {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.left-col {
+  background-color: skyblue;
+  border-radius: 10px 0 0 10px;
+}
+
+.right-col {
+  padding: 50px 15px 50px 15px !important;
+  /* margin-left: 10px; */
+}
+
+.orbtw {
+  text-align: center;
+}
+
+.social-width {
+  width: 48%;
+  padding: 8px;
+  margin: 7px 0;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.Login-btn-google {
+  margin-right: 10px;
+}
+
+.input-container {
+  position: relative;
+}
+
+.input-icon1 {
+  position: absolute;
+  top: 39%;
+  transform: translateY(-50%);
+  right: 10px;
+  color: #999;
+}
+
+.input-icon2 {
+  position: absolute;
+  top: 64%;
+  transform: translateY(-50%);
+  right: 10px;
+  color: #999;
+}
+
+.privacy-policy {
+  color: rgb(0, 183, 255);
+  margin: 8px 0;
+}
+
+/* Forgot Password */
+.ExclamationCircle {
+  text-align: center;
+}
+
+.iconCircle {
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+}
+
+.ExclamationCircle {
+  margin-bottom: 20px;
+}
+
+.heading-para-forgot-password {
+  text-align: center;
+}
+
+.heading-para-forgot-password>h2 {
+  margin-bottom: 20px;
+}
+
+.forgot-lawimg {
+  width: 42vh;
+  margin-top: 99px;
+}
+
+.Forget-pass-login {
+  text-align: center;
+}
+
+
+/* Media Mobile  */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .left-col {
+    display: none;
+  }
+
+  .row {
+    width: 95%;
+  }
+
+  .Login-btn-google {
+    font-size: 13px;
+  }
+
+  .Login-btn-microsoft {
+    font-size: 13px;
+  }
+
+  .signup-inline {
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  .right-col>h2 {
+    text-align: center;
+  }
+  .privacy-lenght{
+    font-size: 13.3px;
+  }
+}
