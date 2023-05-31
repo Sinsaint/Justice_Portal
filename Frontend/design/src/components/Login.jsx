@@ -64,6 +64,7 @@ const Login = () => {
               name="password" onChange={handlechange} value={user.password} 
               placeholder="Password" required
             />
+            <p>Frogot Password ?</p>
            </div>
           <button id="Login-btn-continue" onClick={Login}>Login</button>
           <p>
