@@ -7,6 +7,8 @@
   justify-content: center;
 }
 
+
+
 .row {
   border: 1px solid black;
   width: 50%;
@@ -109,6 +111,13 @@
 /* Forgot Password */
 .ExclamationCircle {
   text-align: center;
+}
+
+.forgetlink
+{
+  text-align: right;
+  color: skyblue;
+  font-weight: bold;
 }
 
 .iconCircle {
