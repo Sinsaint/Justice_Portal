@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import "../styles/Login.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { faMicrosoft } from "@fortawesome/free-brands-svg-icons";
 import { faGoogle } from "@fortawesome/free-brands-svg-icons";
 // import { faEyeSlash } from "@fortawesome/free-brands-svg-icons";
@@ -64,7 +64,7 @@ const Login = () => {
               name="password" onChange={handlechange} value={user.password} 
               placeholder="Password" required
             />
-            <p className="Forgot_pass">Frogot Password ?</p>
+            <p className="Forgot_pass">Forgot Password ?</p>
            </div>
           <button id="Login-btn-continue" onClick={Login}>Login</button>
           <p>
@@ -75,7 +75,7 @@ const Login = () => {
             <FontAwesomeIcon icon={faGoogle} /> Sign up with Google
           </button>
           <button className="Login-btn-microsoft social-width">
-            <FontAwesomeIcon icon={faMicrosoft} /> Sign up with Microsoft
+            <FontAwesomeIcon icon={faMicrosoft} /> Sign up with GitHub
           </button>
         </div>
       </div>
