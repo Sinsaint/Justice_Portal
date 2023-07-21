@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import "../styles/Login.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { faMicrosoft } from "@fortawesome/free-brands-svg-icons";
 import { faGoogle } from "@fortawesome/free-brands-svg-icons";
 // import { faEyeSlash } from "@fortawesome/free-brands-svg-icons";
