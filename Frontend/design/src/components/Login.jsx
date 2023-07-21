@@ -64,7 +64,7 @@ const Login = () => {
               name="password" onChange={handlechange} value={user.password} 
               placeholder="Password" required
             />
-            <p className="Forgot_pass">Frogot Password ?</p>
+            <p className="Forgot_pass">Forgot Password ?</p>
            </div>
           <button id="Login-btn-continue" onClick={Login}>Login</button>
           <p>
@@ -75,7 +75,7 @@ const Login = () => {
             <FontAwesomeIcon icon={faGoogle} /> Sign up with Google
           </button>
           <button className="Login-btn-microsoft social-width">
-            <FontAwesomeIcon icon={faMicrosoft} /> Sign up with Microsoft
+            <FontAwesomeIcon icon={faMicrosoft} /> Sign up with GitHub
           </button>
         </div>
       </div>
