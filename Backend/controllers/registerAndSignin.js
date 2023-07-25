@@ -4,7 +4,7 @@ require("../models/userDetail");
 
 const User =mongoose.model("UserInfo");
 
-app.post("/register",async(req,res)=>{
+exports.signUp = async (req, res) =>{
     const {name,email,password}=req.body;
     const encryptedPassword= await bcryptjs.hash(password,10)
     try{
@@ -26,7 +26,7 @@ app.post("/register",async(req,res)=>{
 
 //creating API for the log in.
 
-app.post("/log-in",async(req,res)=>{
+exports.signIn = async (req, res) =>{
     const {email,password}=req.body;
     const user=await User.findOne({email});
     if(!user){
@@ -42,4 +42,4 @@ app.post("/log-in",async(req,res)=>{
     }
     res.json({status:"Error", error:"Invalid Password"});
 });
-//module.exports=
+
