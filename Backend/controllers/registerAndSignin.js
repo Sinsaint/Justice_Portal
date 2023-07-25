@@ -1,6 +1,7 @@
 
 
 require("../models/userDetail");
+const jwt = require('jsonwebtoken');
 
 const User =mongoose.model("UserInfo");
 
@@ -22,7 +23,7 @@ exports.signUp = async (req, res) =>{
     }   catch (error){
         res.send({status:"error"});
     }
-});
+};
 
 //creating API for the log in.
 
@@ -41,5 +42,5 @@ exports.signIn = async (req, res) =>{
         }
     }
     res.json({status:"Error", error:"Invalid Password"});
-});
+};
 
