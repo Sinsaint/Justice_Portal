@@ -6,4 +6,5 @@ mongoose.connect(url,{
 }).then(()=>{console.log("connected to database");})
 .catch(e=>console.log(e))
 
+
 module.export=connectDB;
