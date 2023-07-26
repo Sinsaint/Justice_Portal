@@ -1,8 +1,11 @@
 const express = require('express');
 const app = express();
-const connectDB = require('./db'); // Import the database connection function
+const connectDB = require('./config/db');
+const bodyParser = require('body-parser'); // Import the database connection (mongoose.connection)
 
-// Other middleware and configurations can be added here
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
 
 connectDB(); // Connect to the database
 
@@ -13,4 +16,3 @@ const port = 5000;
 app.listen(port, () => {
   console.log(`Server started on port ${port}`);
 });
-
