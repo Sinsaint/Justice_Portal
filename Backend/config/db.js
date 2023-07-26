@@ -1,10 +1,16 @@
-const mongoose =required('mongoose');
+const mongoose = require('mongoose');
+const dbUrl = "mongodb+srv://JusticePortal:JusticePortal@justiceportal.7lpba3s.mongodb.net/?retryWrites=true&w=majority";
 
+const connectDB = async () => {
+  try {
+    await mongoose.connect(dbUrl, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
+    console.log("Connected to the database");
+  } catch (error) {
+    console.error("Error connecting to the database:", error.message);
+  }
+};
 
-mongoose.connect(url,{
-    useNewUrlParser:true
-}).then(()=>{console.log("connected to database");})
-.catch(e=>console.log(e))
-
-
-module.export=connectDB;
+module.exports = connectDB;
