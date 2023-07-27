@@ -6,6 +6,8 @@ Required dependencies/modules for this project
 passport (npm install passport)
 
 [If applicable, mention any environment variables that need to be set, such as database credentials, API keys, etc.]
+/Frontend
+
 
 /backend
    |-- /config
