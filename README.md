@@ -10,24 +10,12 @@ passport (npm install passport)
 
 
 /backend
-   |-- /config
-   |      |-- db.js       # Database configuration file
-   |      |-- auth.js     # Authentication configuration (if applicable)
-   |      |-- ...
-   |
-   |-- /controllers
-   |      |-- user.js     # Controller for user-related actions
-   |      |-- post.js     # Controller for post-related actions (if applicable)
-   |      |-- ...
-   |
-   |-- /models
-   |      |-- user.js     # Database model for user
-   |      |-- post.js     # Database model for post (if applicable)
-   |      |-- ...
-   |
-   |-- /routes
-   |      |-- api.js      # API endpoints and route definitions
-   |      |-- ...
-   |
-   |-- index.js           # Entry point of the backend application
-   |-- ...
+  - controllers
+  - authController.js
+- models
+  - user.js
+- routes
+  - authRoutes.js
+- views (optional for MVC, as we are building an API)
+- app.js 
+   
